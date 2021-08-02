@@ -99,14 +99,33 @@ h1 {
   display: inline-block;
   text-align: center;
 }
-
-
+html {
+  scroll-behavior: smooth;
+}
 </style>
+
+	
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>	
+
 <div>
 <ul>
-  <li><a href="default.asp">Home</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#scroll">Works</a></li>
   <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
 </ul>
 </div>
 
@@ -137,5 +156,16 @@ h1 {
 <p>Age: "age is just a number, kiddo" - Kanye East, Fornite Balls Freestyle</p>
 <p>Profession: Programming (C++, HTML, CSS, PHP, Python, C#, Luau)</p>
 <p>Hobby: be cool</p>
+<br>
+<h1>Works:</h1>
+<p><a href="https://github.com/Localtings/Wiper">Wiper</a></p>
+<p><a href="https://github.com/Localtings/Boring-CMD-games">Boring CMD games</a></p>
+<p><a href="http://hrga.ga/">HRGA.GA (in collaboration with NDTK)</a><p>
+<br>
+<p><a href="https://localtings.github.io/">localtings.github.io</a><p>
+<br>
+<h1>Contact:</h1>
+<p>Discord: 2954#2954</p>
+<p>Twitter: @HamamotoYoshih2</p>
 </body>
 </html>
