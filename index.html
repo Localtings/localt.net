@@ -128,11 +128,15 @@ $(document).ready(function(){
 <li><a href="#about-main">About</a></li>
 </ul>
 </div>
+<--Import scroll animation-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <div class='box'>
-<h1>Localt</h1>
-<p>Game Developer / Full stack web developer.</p>
+	<h1>Localt</h1>
+	<p>Game Developer / Full stack web developer.</p>
 </div>
 <div class="img-box">
+
 <br>
 <br>
 <br>
@@ -145,31 +149,50 @@ $(document).ready(function(){
 <br>
 <br>
 <br>
-<br>
+<br>	
 </div>
+
 <br>
 <br>
 <br>
-<h1>Profile:</h1>
-<p>Name: Localt</p>
-<p>Age: "age is just a number, kiddo" - Kanye East, Fornite Balls Freestyle</p>
-<p>Profession: Programming (C++, HTML, CSS, PHP, Python, C#, Luau)</p>
-<p>Hobby: be cool</p>
+	
+<div data-aos="fade-right">
+	<h1>Profile:</h1>
+	<p>Name: Localt</p>
+	<p>Age: "age is just a number, kiddo" - Kanye East, Fornite Balls Freestyle</p>
+	<p>Profession: Programming (C++, HTML, CSS, PHP, Python, C#, Luau)</p>
+	<p>Hobby: be cool</p>
+</div>
+	
 <br>
-<h1 id="about-main">Works:</h1>
-<p><a href="https://github.com/Localtings/Wiper">Wiper</a></p>
-<p><a href="https://github.com/Localtings/Boring-CMD-games">Boring CMD games</a></p>
-<p><a href="http://hrga.ga/">HRGA.GA (in collaboration with NDTK)</a><p>
-<p><a href="https://www.roblox.com/games/6378901632/mugens-coding-place-localtbowm">Mugens - In Development</a><p>
-<p><a href="https://localtings.github.io/">localtings.github.io</a><p>
+	
+<div data-aos="fade-left">
+	<h1 id="about-main">Works:</h1>
+	<p><a href="https://github.com/Localtings/Wiper">Wiper</a></p>
+	<p><a href="https://github.com/Localtings/Boring-CMD-games">Boring CMD games</a></p>
+	<p><a href="http://hrga.ga/">HRGA.GA (in collaboration with NDTK)</a><p>
+	<p><a href="https://www.roblox.com/games/6378901632/mugens-coding-place-localtbowm">Mugens - In Development</a><p>
+	<p><a href="https://localtings.github.io/">localtings.github.io</a><p>
+</div>
+
 <br>
+	
 <h1>Contact:</h1>
 <p>Discord: 2954#2954</p>
 <p>Twitter: @HamamotoYoshih2</p>
+
 <br>
 <br>
 <br>
 <br>
 <p style="font-size: 9">© 2021 Sussy Balls. All rights not reserved</p>
+<--AOS Initial-->  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      	offset: 120, // offset (in px) from the original trigger point
+  	duration: 400, // values from 0 to 3000, with step 50ms
+    );
+  </script>
 </body>
 </html>
