@@ -51,10 +51,6 @@ ul {
   position: fixed;
 }
 
-li {
-  float: left;
-}
-
 .normal_link {
   text-align: center;
   display: block;
@@ -143,32 +139,6 @@ html {
   scroll-behavior: smooth;
 }
 </style>
-
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>	
-
-<div>
-<ul>
-<li><a href="http://localtings.github.io" class="normal_link">Home</a></li>
-<li><a href="#about-main" class="normal_link">About</a></li>
-</ul>
-</div>
 <!--Import scroll animation-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
