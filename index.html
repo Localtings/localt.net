@@ -7,6 +7,39 @@
 <body>
 <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 <style>
+.workbox {
+  background-color: rgb(49, 49, 49);
+  width: 400px;
+  height: 200px;
+  border: 2px solid rgb(197, 197, 197);
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  transition:all .3s ease-in-out;
+}
+
+.workbox:hover {
+  background-color: rgb(75, 75, 75);
+  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+}
+
+.workbox h1{
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.workbox p {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.worka {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -22,7 +55,7 @@ li {
   float: left;
 }
 
-a {
+.normal_link {
   text-align: center;
   display: block;
   color: white;
@@ -33,7 +66,7 @@ a {
   border-color: white;
 }
 
-a:hover {
+.normal_link:hover {
   color: black;
   background-color: white;
 }
@@ -54,7 +87,7 @@ a:hover {
   background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.special_header {
  font-family: 'Oswald', sans-serif;
  text-transform: uppercase;
  color: white;
@@ -65,9 +98,15 @@ body {
   background-size: cover;
 }
 
-p {
+span {
+  font-family: 'Oswald', sans-serif;
   color: white;
-  text-align: center;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  color: white;
   text-decoration: none;
 }
 
@@ -105,7 +144,9 @@ html {
 }
 </style>
 
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -124,82 +165,122 @@ $(document).ready(function(){
 
 <div>
 <ul>
-<li><a href="http://localt.tk/">Home</a></li>
-<li><a href="#about-main">About</a></li>
-<li><a href="#contact-main">Contact</a></li>
+<li><a href="http://localtings.github.io" class="normal_link">Home</a></li>
+<li><a href="#about-main" class="normal_link">About</a></li>
 </ul>
 </div>
-<--Import scroll animation-->
+<!--Import scroll animation-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <div class='box'>
-	<h1>Localt</h1>
-	<p>Game Developer / Full stack web developer.</p>
+	<h1 class="special_header"> Localt</h1>
+	<p style="text-align: center;">A young passionate programmer</p>
 </div>
+
 <div class="img-box">
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1 style="color: black;">I really don't have an inspirational quote so yeah.</h1>	
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>	
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 style="color: black; margin-top: 100px;" class="special_header">"I like glizzys"</h1>
 </div>
 
-<br>
-<br id="about-main">
-<br>
-	
-<div data-aos="fade-up">
-	<h1>Profile:</h1>
-	<p>Name: Localt</p>
-	<p>Age: "age is just a number, kiddo" - Kanye East, Fornite Balls Freestyle</p>
-	<p>Profession: Programming (C++, Python, Luau,...)</p>
-	<p>Hobby: be cool</p>
+
+<div data-aos="fade-up" style="margin-top: 100px;" id="about-main">
+  <h1 class="special_header">Programming Languages I'm familiar with:</h1>
+  <p style="text-align: center;">
+    <img src="img/c++.png" width="128" height="128" style="float: center;">
+    <img src="img/python.png" width="128" height="128" style="float: center;">
+    <img src="img/download.png" width="128" height="128" style="float: center;">
+    <img src="img/Luau.png" width="128" height="128" style="float: center;">
+  </p>
+
+  <h1 class="special_header">My game developing experience on the Roblox platform:</h1>
+  <p style="text-align: center;">With 2 years of experience, 30k Robux per month.<br> I believe I'm doing a great job on scripting games on the Roblox platform.<br>When it comes to developing Roblox games, I can do almost everything! Like: Datastore wizard, great user interface, etc. <br>But I'm specialized in scripting PVP games. Here are the studios that I've worked with:</p>
+  <p>
+    <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="normal_link" target="_blank">
+      <img src="img/studio-roblox-icon.png" width="16" height="16">
+      </img>
+      Rogue Ga Kill
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="normal_link" target="_blank">
+      <img src="img/studio-roblox-icon.png" width="16" height="16">
+      </img>
+      Project Tensura Online
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="normal_link" target="_blank">
+      <img src="img/studio-roblox-icon.png" width="16" height="16">
+      </img>
+      Moon Studios
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.roblox.com/users/404233446/profile" class="normal_link" target="_blank">
+      <img src="img/black-roblox-icon.png" width="16" height="16">
+      </img>
+      My Roblox profile
+    </a>
+  </p>
 </div>
-	
-<br>
-	
-<div data-aos="fade-up">
-	<h1>Works:</h1>
-	<p><a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about">A developer at Project Tensura Online</a></p>
-	<p><a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill">A developer at Rogue Ga Kill</a></p>
-	<p><a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about">Former developer at Moon Studios - Sento</a></p>
+
+
+
+<div data-aos="fade-up" style="margin-top: 150px;"> 
+  <h1 class="special_header">My Git repositories:</h1>
+  <p style="text-align: center;">Besides scripting games on Roblox. I've also made some open-source projects which are displayed here:</p>
+
+      <a href="https://github.com/Localtings/RoTracker" target="_blank" class="worka">
+        <div class="workbox">
+          <h1>RoTracker</h1>
+          <p>Roblox profile tracker comes with 2 options: One time tracking and Looped tracking stamped with time. A open-source project made with Python.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Localtings/RoTracker-ChromeExtension" target="_blank" class="worka">
+        <div class="workbox">
+          <h1>RoTracker - Chrome Extension</h1>
+          <p>Roblox profile tracker comes with 1 options One time tracking but can be used everywhere. An alternative, open-source version of the main one made with Javascript + JQuery and HTML.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Localtings/RobloxModuleScripts" target="_blank" class="worka">
+        <div class="workbox">
+          <h1>My Roblox Open-source ModuleScripts (WIP)</h1>
+          <p>Roblox ModuleScripts that I've created to make my Roblox Game Scripting easier. Made with Luau (Roblox's Modified Lua)</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Localtings/SimpleAnti-IPGrabberChromeExtension" target="_blank" class="worka">
+        <div class="workbox">
+          <h1>Anti-IP Grabber Chrome Extension</h1>
+          <p>A simple chrome extension which blocks you from all of Grabify's IP grabber URLs. Made with Javascript.</p>
+        </div>
+      </a>
+
 
 </div>
-<div data-aos="fade-up"> 
-	<h1>Community Contributions:</h1>
-	<p><a href="https://github.com/Localtings/">My github.</a><p>
-</div>
-<br id="contact-main">
-<br>
-<div data-aos="fade-up">
-	<h1>Contact:</h1>
-	<p>Roblox: @localtbowm</p>
-	<p>Twitter: @HamamotoYoshih2</p>
-	<p>Discord server:</p>
-	<p style="text-align: center;"><iframe src="https://discord.com/widget?id=850943214307246080&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></p>
+
+<div style="margin-top: 100px;">
+  <p style="font-size: 9; text-align: center;">© 2021 Localt Developer</p>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+      offset: 120, 
+      duration: 1400, 
+     });
+    </script>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<p style="font-size: 9">© 2021 Localt Dev</p>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    AOS.init({
-  	offset: 120, // offset (in px) from the original trigger point
-  	duration: 1400, // values from 0 to 3000, with step 50ms
-   });
-  </script>
 </body>
 </html>
