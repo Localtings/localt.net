@@ -2,24 +2,26 @@
 <html>
 <head>
 <title>Localt</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 <style>
 .workbox {
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  text-decoration: none;
   background-color: rgb(49, 49, 49);
   width: 400px;
   height: 200px;
   border: 2px solid rgb(197, 197, 197);
   padding: 20px;
-  margin: auto;
   margin-top: 50px;
   transition:all .3s ease-in-out;
 }
 
 .workbox:hover {
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(107, 107, 107);
   box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
 }
 
@@ -34,22 +36,7 @@
   color: white;
   text-decoration: none;
 }
-.worka {
-  font-family: Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  overflow: hidden;
-  background-color: black;
-  overflow: hidden;
-  position: fixed;
-}
 
 .normal_link {
   text-align: center;
@@ -67,21 +54,6 @@ ul {
   background-color: white;
 }
 	
-.alt {
-  text-align: center;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition:all .5s ease-in-out;
-  border-color: white;
-}
-
-.alt:hover {
-  color: black;
-  background-color: white;
-}
 
 .special_header {
  font-family: 'Oswald', sans-serif;
@@ -92,12 +64,6 @@ body {
   font-family: 'Oswald', sans-serif;
   background: black no-repeat center center fixed;
   background-size: cover;
-}
-
-span {
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  text-decoration: none;
 }
 
 p {
@@ -125,7 +91,7 @@ h1 {
   width: 1280x;
   height: 720px;
 }
-.space { margin-top: 300px; }
+
 .btn {
   border: none;
   background-color: inherit;
@@ -139,6 +105,7 @@ html {
   scroll-behavior: smooth;
 }
 </style>
+
 <!--Import scroll animation-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -205,43 +172,46 @@ html {
 
 
 
-<div data-aos="fade-up" style="margin-top: 150px;"> 
+<div data-aos="fade-down" style="margin-top: 150px;"> 
   <h1 class="special_header">My Git repositories:</h1>
   <p style="text-align: center;">Besides scripting games on Roblox. I've also made some open-source projects which are displayed here:</p>
 
-      <a href="https://github.com/Localtings/RoTracker" target="_blank" class="worka">
-        <div class="workbox">
-          <h1>RoTracker</h1>
-          <p>Roblox profile tracker comes with 2 options: One time tracking and Looped tracking stamped with time. A open-source project made with Python.</p>
-        </div>
+    <div style="margin: auto;">
+      <a href="https://github.com/Localtings/RoTracker" target="_blank" class="workbox">
+        <h1>RoTracker</h1>
+        <p>Roblox profile tracker comes with 2 options: One time tracking and Looped tracking stamped with time. A open-source project made with Python.</p>
       </a>
+    </div>
 
-      <a href="https://github.com/Localtings/RoTracker-ChromeExtension" target="_blank" class="worka">
-        <div class="workbox">
-          <h1>RoTracker - Chrome Extension</h1>
-          <p>Roblox profile tracker comes with 1 options One time tracking but can be used everywhere. An alternative, open-source version of the main one made with Javascript + JQuery and HTML.</p>
-        </div>
+    <div style="margin: auto;">
+      <a href="https://github.com/Localtings/RoTracker-ChromeExtension" target="_blank" class="workbox">
+        <h1>RoTracker - Chrome Extension</h1>
+        <p>Roblox profile tracker comes with 1 options One time tracking but can be used everywhere. An alternative, open-source version of the main one made with Javascript + JQuery and HTML.</p>
       </a>
+    </div>
 
-      <a href="https://github.com/Localtings/RobloxModuleScripts" target="_blank" class="worka">
-        <div class="workbox">
-          <h1>My Roblox Open-source ModuleScripts (WIP)</h1>
-          <p>Roblox ModuleScripts that I've created to make my Roblox Game Scripting easier. Made with Luau (Roblox's Modified Lua)</p>
-        </div>
-      </a>
+    <div style="margin: auto;">
+      <a href="https://github.com/Localtings/RobloxModuleScripts" target="_blank" class="workbox">
+        <h1>My Roblox Open-source ModuleScripts (WIP)</h1>
+        <p>Roblox ModuleScripts that I've created to make my Roblox Game Scripting easier. Made with Luau (Roblox's Modified Lua)</p>
+     </a>
+    </div>
 
-      <a href="https://github.com/Localtings/SimpleAnti-IPGrabberChromeExtension" target="_blank" class="worka">
-        <div class="workbox">
-          <h1>Anti-IP Grabber Chrome Extension</h1>
-          <p>A simple chrome extension which blocks you from all of Grabify's IP grabber URLs. Made with Javascript.</p>
-        </div>
-      </a>
-
-
+    <div style="margin: auto;">
+      <a href="https://github.com/Localtings/SimpleAnti-IPGrabberChromeExtension" target="_blank" class="workbox">
+        <h1>Anti-IP Grabber Chrome Extension</h1>
+        <p>A simple chrome extension which blocks you from all of Grabify's IP grabber URLs. Made with Javascript.</p>
+    </a>
+    </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <div style="margin-top: 100px;">
-  <p style="font-size: 9; text-align: center;">© 2021 Localt Developer</p>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
