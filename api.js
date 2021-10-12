@@ -1,1 +1,1 @@
-console.log("hi");
+console.log("Nothing to write here.");
