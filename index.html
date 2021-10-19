@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Localt</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Localt</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+  <!--Yeah yeah im too lazy to make a responsive website-->
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
@@ -11,13 +13,14 @@
   border-radius: 5px;
   display: inline-block;
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
   width: 400px;
   height: 200px;
   padding: 20px;
   margin-top: 50px;
+  position: relative;
 }
 
 .gitbox {
@@ -108,6 +111,7 @@ p {
   font-family: 'Oswald', sans-serif;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .box {
@@ -144,12 +148,9 @@ html {
 }
 </style>
 
-<!--Import scroll animation-->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 <div class='box'>
 	<h1 class="special_header">Localt</h1>
-	<p  style="font-size: 9; text-align: center; float: center;"><button id="copy" onclick="copyToClipboard('#copy')">localt#2954</button></p>
+	
 	<p style="text-align: center;">A young passionate programmer</p>
 </div>
 
@@ -225,7 +226,7 @@ html {
     <h1 class="special_header">My Git repositories:</h1>
     <p style="text-align: center;">Besides scripting games on Roblox. I've also made some open-source projects which are displayed here:</p>
   
-      <div style="margin: auto;">
+      <div>
         <a href="https://github.com/Localtings/RoTracker" target="_blank" class="workbox">
           <h1>RoTracker</h1>
           <p>Roblox profile tracker comes with 2 options: One time tracking and Looped tracking stamped with time. A open-source project made with Python.</p>
@@ -252,6 +253,11 @@ html {
           <p>A cool chrome extension that brings back Roblox's profile status because I'm bored. Made with JQuery + Javascript..</p>
       </a>
       </div>
+</div>
+
+<div>
+  <p  style="font-size: 9; text-align: center; float: center;"><button id="copy" onclick="copyToClipboard('#copy')">localt#2954</button></p>
+  <p>© 2021 Localt</p>
 </div>
 
 </body>
