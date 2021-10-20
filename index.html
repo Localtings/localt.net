@@ -15,29 +15,37 @@
   float: left;
   margin-left: 30px;
   text-decoration: none;
+  border: 2px solid rgb(233, 233, 233);
   background-color: rgb(255, 255, 255);
-  width: 400px;
+  width: 370px;
   height: 200px;
   padding: 20px;
   margin-top: 50px;
+  margin-bottom: 20px;
   position: relative;
 }
 
 .gitbox {
-  display: block;
-  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  display: inline-block;
+  width: 100%;
   height: auto;
 }
 
 .gitbox h1 {
-  color: white;
+  font-family: Consolas, 'Courier New', monospace;
+  color: rgb(38, 206, 88);
 }
 
 .gitbox p{
-  color: white;
+  font-family: Consolas, 'Courier New', monospace;
+  color: rgb(109, 109, 109);
 }
 
 .workbox:hover {
+  border: 2px solid rgb(156, 156, 156);
   background-color: rgb(214, 212, 212);
 }
 
@@ -63,7 +71,7 @@ button {
   cursor: pointer;
   text-decoration: underline;
   display: inline-block;
-  background-color: black;
+  background-color: rgb(116, 116, 116);
   color:white;
   transition:all .3s ease-in-out;
 }
@@ -222,37 +230,38 @@ html {
 
 
 
-<div style="margin-bottom: 350px;" class="gitbox">
-    <h1 class="special_header">My Git repositories:</h1>
-    <p style="text-align: center;">Besides scripting games on Roblox. I've also made some open-source projects which are displayed here:</p>
-  
-      <div>
+<div style="margin-bottom: 350px; background-color: white;" class="gitbox">
+    <h1 class="special_header" style="font-size: 50px;">// My Git repositories</h1>
+    <div>
+
         <a href="https://github.com/Localtings/RoTracker" target="_blank" class="workbox">
           <h1>RoTracker</h1>
           <p>Roblox profile tracker comes with 2 options: One time tracking and Looped tracking stamped with time. A open-source project made with Python.</p>
         </a>
-      </div>
+
   
-      <div>
+
         <a href="https://github.com/Localtings/RoTracker-ChromeExtension" target="_blank" class="workbox">
           <h1>RoTracker Chrome Extension</h1>
           <p>Roblox profile tracker comes with 1 options One time tracking but can be used everywhere. An alternative, open-source version of the main one made with Javascript + JQuery and HTML.</p>
         </a>
-      </div>
+
   
-      <div>
+
         <a href="https://github.com/Localtings/RobloxModuleScripts" target="_blank" class="workbox">
           <h1>My Roblox Open-source ModuleScripts</h1>
           <p>Roblox ModuleScripts that I've created to make my Roblox Game Scripting easier. Made with Luau (Roblox's Modified Lua)</p>
        </a>
-      </div>
 
-      <div>
+
+  
         <a href="https://github.com/Localtings/BRSB" target="_blank" class="workbox">
           <h1>BRSB</h1>
           <p>A cool chrome extension that brings back Roblox's profile status because I'm bored. Made with JQuery + Javascript..</p>
       </a>
-      </div>
+
+    </div>
+
 </div>
 
 <div>
