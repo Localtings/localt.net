@@ -10,6 +10,9 @@
 <body>
 <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 <style>
+
+
+
 .workbox {
   border-radius: 5px;
   display: inline-block;
@@ -24,23 +27,72 @@
   margin-top: 50px;
   margin-bottom: 20px;
   position: relative;
+  transition:all .3s ease-in-out;
+}
+
+.button-1 {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  transition:all .3s ease-in-out;
+  border: 0.5px solid rgb(255, 255, 255);
+}
+
+.button-1:hover {
+  border: 0.5px solid white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.button-2 {
+  padding: 15px 32px;
+  border: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  transition:all .3s ease-in-out;
+  width: 200px
+}
+
+.button-2::after {
+  content: ">";
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  transition: margin 0.2s ease;
+}
+
+.button-2:hover::after {
+	margin-left: 0.5em;
+	margin-right: 0em;
+}
+
+
+.button-2:hover {
+  color: rgb(185, 185, 185);
 }
 
 .card {
-  text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:contain;
-  background-position: center;
-  background-image: url(img/background2.jpg);
-  margin-bottom: 150px;
+  display: inline-block; 
+  padding: 10px 30px;
+  width: 600px;
 }
 
+
 .card h1{
+  font-weight: 600;
   color:white;
 }
 
 .card p{
+  font-weight: 400;
   color:white;
 }
 
@@ -54,8 +106,9 @@
 }
 
 .gitbox p{
+  font-weight: 400;
   font-family: Consolas, 'Courier New', monospace;
-  color: rgb(38, 206, 88);
+  color: rgb(124, 124, 124);
 }
 
 .workbox:hover {
@@ -63,35 +116,38 @@
   background-color: rgb(214, 212, 212);
 }
 
-.workbox:hover p {
-  color: rgb(116, 116, 116);
-}
+
 
 .workbox h1{
-  font-family: Arial, sans-serif;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-}
-
-.workbox p {
-  font-family: Arial, sans-serif;
-  color: rgb(128, 128, 128);
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  font-family: 'Oswald', sans-serif;
-  cursor: pointer;
-  text-decoration: underline;
-  display: inline-block;
-  background-color: rgb(116, 116, 116);
-  color:white;
   transition:all .3s ease-in-out;
 }
 
-button:hover:after {
-  content:" copy to clipboard."
+.workbox p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition:all .3s ease-in-out;
+}
+
+
+#copy {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  transition:all .3s ease-in-out;
+  cursor: pointer;
+}
+
+#copy:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .normal_link {
@@ -101,7 +157,7 @@ button:hover:after {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition:all .5s ease-in-out;
+  transition:all .3s ease-in-out;
   border-color: white;
 }
 
@@ -119,21 +175,21 @@ button:hover:after {
 	
 
 .special_header {
- font-family: 'Oswald', sans-serif;
- text-transform: uppercase;
- color: white;
+  color: white;
 }
 body {
-  font-family: 'Oswald', sans-serif;
   background: black no-repeat center center fixed;
   background-size: cover;
 }
 
 p {
-  font-family: 'Oswald', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
   text-align: center;
+  
 }
 
 .box {
@@ -142,9 +198,10 @@ p {
 
 h1 {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
+  font-weight: 600;
   font-size: 30px;	
 }
 
@@ -156,6 +213,7 @@ h1 {
   background-position: center;
   width: 100%;
   height: 720px;
+  margin-bottom: 150px;
 }
 
 .btn {
@@ -177,17 +235,6 @@ html {
 	
 	<p style="text-align: center;">A young passionate programmer</p>
 </div>
-
-<script>
-  function copyToClipboard(element) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
-  }
-</script>
-
 <div class="img-box">
   <br>
   <br>
@@ -196,23 +243,31 @@ html {
   <br>
   <br>
   <br>
-  <h1 style="color: black; margin-top: 100px;" class="special_header">"I like glizzys"</h1>
+  <h1 style="color: black; margin-top: 100px;" class="special_header" style="text-transform: uppercase;">"I like glizzys"</h1>
 </div>
 
 
 <div style="margin-bottom: 150px;" id="about-main">
-  <h1 class="special_header">Programming Languages I'm familiar with:</h1>
+  <h1 class="special_header">Programming Languages I'm familiar with</h1>
   <p style="text-align: center;">
     <img src="img/c++.png" width="128" height="128" style="float: center;">
     <img src="img/python.png" width="128" height="128" style="float: center;">
     <img src="img/download.png" width="128" height="128" style="float: center;">
     <img src="img/Luau.png" width="128" height="128" style="float: center;">
   </p>
+</div>
 
-  <h1 class="special_header">My game developing experience on the Roblox platform:</h1>
-  <p style="text-align: center;">With 2 years of experience, 30k Robux per month.<br> I believe I'm doing a great job on scripting games on the Roblox platform.<br>When it comes to developing Roblox games, I can do almost everything! Like: Datastore wizard, great user interface, etc. <br>But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:</p>
+<div style="margin-bottom: 150px;">
+  <h1 class="special_header">My game developing experiences</h1>
+
+  <div style="text-align: center;">
+      <p style="text-align: center; font-size: 20px;">
+        With 2 years of experience, 30k Robux per month. I believe I'm doing a great job<br> on scripting games on the Roblox platform.  When it comes to developing <br> Roblox games, I can do almost everything!  Like: Datastore wizard, great user interface, etc.<br> But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
+      </p>
+  </div>  
+ 
   <p>
-    <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="normal_link" target="_blank">
+    <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="button-2" target="_blank">
       <img src="img/studio-roblox-icon.png" width="16" height="16">
       </img>
       Rogue Ga Kill
@@ -220,33 +275,25 @@ html {
   </p>
 
   <p>
-    <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="normal_link" target="_blank">
+    <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="button-2" target="_blank">
       <img src="img/studio-roblox-icon.png" width="16" height="16">
       </img>
-      Project Tensura Online
+      Tensura Online
     </a>
   </p>
 
   <p>
-    <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="normal_link" target="_blank">
+    <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="button-2" target="_blank">
       <img src="img/studio-roblox-icon.png" width="16" height="16">
       </img>
       Moon Studios
-    </a>
-  </p>
-
-  <p>
-    <a href="https://www.roblox.com/users/404233446/profile" class="normal_link" target="_blank">
-      <img src="img/black-roblox-icon.png" width="16" height="16">
-      </img>
-      My Roblox profile
     </a>
   </p>
 </div>
 
 
 
-<div style="margin-bottom: 100px; background-color: white;" class="gitbox">
+<div style="margin-bottom: 100px; background-color: black;" class="gitbox">
     <p style="font-size: 30px;">// My open-source works</p>
     <div>
 
@@ -280,19 +327,27 @@ html {
 
 </div>
 
-<div class="card">
-  <div style="display: inline-block;">
-    <h1>Personal information</h1>
+<div style="text-align: center;
+margin-bottom: 150px;">
+  <div class="card">
+    <h1>Personal card</h1>
     <p style="text-align: left;">Name: ???</p>
     <p style="text-align: left;">Nick Name: Localt</p>
     <p style="text-align: left;">Age: ???</p>
     <p style="text-align: left;">Nationality: ???</p>
     <p style="text-align: left;">Favourite quote: “Have the courage to follow your heart and intuition. They somehow already know what you truly want to become.”</p>
+    <p>
+      <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
+        <img src="img/black-roblox-icon.png" width="16" height="16">
+        </img>
+        My Roblox profile
+      </a>
+    </p>
   </div>
 </div>
 
 <div>
-  <p  style="font-size: 9; text-align: center; float: center;"><button id="copy" onclick="copyToClipboard('#copy')">localt#2954</button></p>
+  
   <p>© 2021 Localt</p>
 </div>
 
