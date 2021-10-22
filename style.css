@@ -1,0 +1,219 @@
+  .workbox {
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+    text-decoration: none;
+    border: 2px solid rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+    width: 370px;
+    height: 210px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    transition:all .2s ease-in-out;
+  }
+  
+  .button-1 {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+    border: 0.5px solid rgb(255, 255, 255);
+  }
+  
+  .button-1:hover {
+    border: 0.5px solid white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  .button-2 {
+    padding: 15px 32px;
+    border: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+    width: 200px
+  }
+  
+  .button-2::after {
+    content: "";
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    transition: margin 0.2s ease;
+  }
+  
+  .button-2:hover::after {
+      margin-left: 0.5em;
+      margin-right: 0em;
+  }
+  
+  
+  .button-2:hover {
+    color: rgb(192, 192, 192);
+  }
+  
+  .card {
+    display: inline-block; 
+    padding: 10px 30px;
+    width: 600px;
+    background-color: rgb(10, 10, 10);
+  }
+  
+  
+  .card h1{
+    font-weight: 600;
+    color:white;
+  }
+  
+  .card p{
+    font-weight: 400;
+    color:white;
+  }
+  
+  .gitbox {
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .gitbox p{
+    font-weight: 400;
+    font-family: Consolas, 'Courier New', monospace;
+    color: rgb(192, 192, 192);
+  }
+  
+  .workbox:hover {
+    border: 2px solid rgb(192, 192, 192);
+    background-color: rgb(214, 212, 212);
+  }
+  
+  .workbox:hover p {
+    color: rgb(27, 27, 27);
+  }
+  
+  .workbox h1{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+  }
+  
+  .workbox p {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+  }
+  
+  
+  #copy {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #copy:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  .normal_link {
+    text-align: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+    border-color: white;
+  }
+  
+  .underline_link {
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .normal_link:hover {
+    color: black;
+    background-color: white;
+  }
+      
+  body {
+    background: black no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  body::before {
+    content: '';
+      position: absolute;
+      top: 8rem;
+      width: 118.4rem;
+      height: 63rem;
+      background: url("img/background3.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      z-index: -10;
+  }
+  
+  p {
+    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  
+  
+  h1 {
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;	
+  }
+  
+  
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    float: center; 
+    margin-bottom: 200px;
+  }
