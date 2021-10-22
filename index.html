@@ -2,260 +2,41 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Localt</title>
+  <title>Localt</title> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
-<style>
 
 
 
-.workbox {
-  border-radius: 5px;
-  display: inline-block;
-  float: left;
-  margin-left: 30px;
-  text-decoration: none;
-  border: 2px solid rgb(233, 233, 233);
-  background-color: rgb(255, 255, 255);
-  width: 370px;
-  height: 200px;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  position: relative;
-  transition:all .3s ease-in-out;
-}
-
-.button-1 {
-  background-color: rgb(255, 255, 255);
-  padding: 15px 32px;
-  text-align: center;
-  color: black;
-  display: inline-block;
-  font-size: 20px;
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-  border: 0.5px solid rgb(255, 255, 255);
-}
-
-.button-1:hover {
-  border: 0.5px solid white;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-.button-2 {
-  padding: 15px 32px;
-  border: none;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  font-size: 20px;
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-  width: 200px
-}
-
-.button-2::after {
-  content: "";
-  font-weight: 700;
-  display: inline-block;
-  margin-left: 0.25em;
-  margin-right: 0.25em;
-  transition: margin 0.2s ease;
-}
-
-.button-2:hover::after {
-	margin-left: 0.5em;
-	margin-right: 0em;
-}
+<!--CSS Initialization-->
+<link rel="stylesheet" href="style.css">
 
 
-.button-2:hover {
-  color: rgb(192, 192, 192);
-}
-
-.card {
-  display: inline-block; 
-  padding: 10px 30px;
-  width: 600px;
-  background-color: rgb(10, 10, 10);
-}
-
-
-.card h1{
-  font-weight: 600;
-  color:white;
-}
-
-.card p{
-  font-weight: 400;
-  color:white;
-}
-
-.gitbox {
-  top: 50%;
-  left: 50%;
-  margin: auto;
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-
-.gitbox p{
-  font-weight: 400;
-  font-family: Consolas, 'Courier New', monospace;
-  color: rgb(192, 192, 192);
-}
-
-.workbox:hover {
-  border: 2px solid rgb(192, 192, 192);
-  background-color: rgb(214, 212, 212);
-}
-
-.workbox:hover p {
-  color: rgb(27, 27, 27);
-}
-
-
-
-.workbox h1{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-}
-
-.workbox p {
-  font-weight: 400;
-  font-size: 18px;
-  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: rgb(90, 90, 90);
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-}
-
-
-#copy {
-  background-color: rgb(255, 255, 255);
-  padding: 15px 32px;
-  text-align: center;
-  color: black;
-  display: inline-block;
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-  cursor: pointer;
-}
-
-#copy:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-.normal_link {
-  text-align: center;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition:all .3s ease-in-out;
-  border-color: white;
-}
-
-.underline_link {
-  text-align: center;
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.normal_link:hover {
-  color: black;
-  background-color: white;
-}
-	
-body {
-  background: black no-repeat center center fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-body::before {
-  content: '';
-	position: absolute;
-	top: 8rem;
-
-	width: 120rem;
-	height: 67.5rem;
-	background: url("img/background3.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: -10;
-}
-
-p {
-  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  
-}
-
-
-h1 {
-  text-align: center;
-  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 30px;	
-}
-
-
-.btn {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-section {
-  float: center; 
-  margin-bottom: 200px;
-}
-
-
-</style>
-
+<!--Header-->
 <section style="margin-bottom: 300px;">
 	<h1 style="color: rgb(255, 255, 255);">Localt</h1>
 	<p style="color: rgb(192, 192, 192);">A young passionate game scripter and programmer.</p>
 </section>
 
+
+<!--About-->
 <section>
-  <h1>Hello I'm Localt!</h1>
-  <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192)">
-  I'm a Roblox scripter with nearly 3 years of experience in scripting. It brought me a good interest in <br> game designing, scripting, programming and so on...
-  <br>Since last year, I've been going public as a scripter and got hired by a few studios. I left some of them <br> because the environment wasn't challenging enough for me to actually improve my skills! <br>
-  I always enjoy doing my job! I've never actually get bored in game scripting. That's because it's like a hobby to me, <br> but I take it really serious.
-</p>
+  <div style="margin-bottom: 150px;" id="about">
+    <div style="text-align: center; margin-bottom: 50px;">
+      <div style="display: inline-block; width: 600px;">
+        <h1 style="text-align: left;">Roblox Game Scripter, Certified Wannabe Programmer</h1>
+        <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192); text-align: left;">
+          I'm a Roblox scripter with nearly 3 years of experience in scripting. It brought me a good interest in game designing, scripting, programming and so on... Since last year, I've been going public as a scripter and got hired by a few studios. I left some of them because the environment wasn't challenging enough for me to actually improve my skills! I always enjoy doing my job! I've never actually get bored in game scripting. That's because it's like a hobby to me, but I take it really serious.
+        </p>
+      </div>
+    </div>  
 </section>
 
 
+<!--Languages-->
 <div style="margin-bottom: 150px;">
-  <h1></h1>
   <h1>Languages I'm familiar with</h1>
   <p style="text-align: center;">
     <img src="img/c++.png" width="128" height="128" style="float: center;">
@@ -265,43 +46,49 @@ section {
   </p>
 </div>
 
-<div style="margin-bottom: 150px;">
-  <h1>My Roblox game scripting experiences</h1>
 
-  <div style="text-align: center; margin-bottom: 50px;">
-      <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192)">
-        With 2 years of experience, 30k Robux per month. I believe I'm doing a great job <br> on scripting games on the Roblox platform.  When it comes to developing <br> Roblox games, I can do almost everything!  Like: Datastore wizard, great user interface, etc.<br> But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
-      </p>
-  </div>  
- 
-  <p>
-    <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="button-2" target="_blank">
-      <img src="img/studio-roblox-icon.png" width="16" height="16">
-      </img>
-      Rogue Ga Kill
-    </a>
-  </p>
+<!--Experiences-->
+<section>
+  <div style="margin-bottom: 150px;">
+    <div style="text-align: center; margin-bottom: 50px;">
+      <div style="display: inline-block; width: 600px;">
+        <h1 style="text-align: left;">My Roblox game scripting experiences</h1>
+        <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192); text-align: left;">
+          With 2 years of experience, 30k Robux per month. I believe I'm doing a great job on scripting games on the Roblox platform.  When it comes to developing Roblox games, I can do almost everything!  Like: Datastore wizard, great user interface, etc. But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
+        </p>
+      </div>
+    </div>  
+   
+    <p>
+      <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="button-2" target="_blank">
+        <img src="img/studio-roblox-icon.png" width="16" height="16">
+        </img>
+        Rogue Ga Kill
+      </a>
+    </p>
+  
+    <p>
+      <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="button-2" target="_blank">
+        <img src="img/studio-roblox-icon.png" width="16" height="16">
+        </img>
+        Tensura Online
+      </a>
+    </p>
+  
+    <p>
+      <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="button-2" target="_blank">
+        <img src="img/studio-roblox-icon.png" width="16" height="16">
+        </img>
+        Moon Studios
+      </a>
+    </p>
+  </div>
+</section>
 
-  <p>
-    <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="button-2" target="_blank">
-      <img src="img/studio-roblox-icon.png" width="16" height="16">
-      </img>
-      Tensura Online
-    </a>
-  </p>
 
-  <p>
-    <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="button-2" target="_blank">
-      <img src="img/studio-roblox-icon.png" width="16" height="16">
-      </img>
-      Moon Studios
-    </a>
-  </p>
-</div>
-
-
-
-<div style="margin-bottom: 100px; background-color: black;" class="gitbox">
+<!--Git-->
+<section>
+  <div style="margin-bottom: 100px; background-color: black;" class="gitbox">
     <p style="font-size: 30px;">// My open-source works</p>
     <div>
 
@@ -332,31 +119,38 @@ section {
       </a>
 
     </div>
+  </div>
+</section>
 
-</div>
 
-<div style="text-align: center;
-margin-bottom: 150px;">
-  <div class="card">
-    <h1>Personal card</h1>
-    <p style="text-align: left;">Name: ???</p>
-    <p style="text-align: left;">Nick Name: Localt</p>
-    <p style="text-align: left;">Age: ???</p>
-    <p style="text-align: left;">Nationality: ???</p>
-    <p style="text-align: left;">Favourite quote: “Have the courage to follow your heart and intuition. They somehow already know what you truly want to become.”</p>
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-      <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
-        <img src="img/black-roblox-icon.png" width="16" height="16">
-        </img>
-        My Roblox profile
-      </a>
+<!--Card-->
+<section>
+  <div style="text-align: center; margin-bottom: 150px;">
+    <div class="card">
+      <h1>Personal card</h1>
+      <p style="text-align: left;">Name: ???</p>
+      <p style="text-align: left;">Nick Name: Localt</p>
+      <p style="text-align: left;">Age: ???</p>
+      <p style="text-align: left;">Nationality: ???</p>
+      <p style="text-align: left;">Favourite quote: “Have the courage to follow your heart and intuition. They somehow already know what you truly want to become.”</p>
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
+          <img src="img/black-roblox-icon.png" width="16" height="16">
+          </img>
+          My Roblox profile
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
+
+<!--Footer-->
 <div>
   <p>© 2021 Localt</p>
 </div>
+
+
 
 </body>
 </html>
