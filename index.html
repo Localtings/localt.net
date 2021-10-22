@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Localt</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -76,13 +76,14 @@
 
 
 .button-2:hover {
-  color: rgb(185, 185, 185);
+  color: rgb(192, 192, 192);
 }
 
 .card {
   display: inline-block; 
   padding: 10px 30px;
   width: 600px;
+  background-color: rgb(10, 10, 10);
 }
 
 
@@ -108,12 +109,16 @@
 .gitbox p{
   font-weight: 400;
   font-family: Consolas, 'Courier New', monospace;
-  color: rgb(124, 124, 124);
+  color: rgb(192, 192, 192);
 }
 
 .workbox:hover {
-  border: 2px solid rgb(156, 156, 156);
+  border: 2px solid rgb(192, 192, 192);
   background-color: rgb(214, 212, 212);
+}
+
+.workbox:hover p {
+  color: rgb(27, 27, 27);
 }
 
 
@@ -126,9 +131,9 @@
 
 .workbox p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(90, 90, 90);
   text-decoration: none;
   transition:all .3s ease-in-out;
 }
@@ -173,13 +178,23 @@
   background-color: white;
 }
 	
-
-.special_header {
-  color: white;
-}
 body {
   background: black no-repeat center center fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: '';
+	position: absolute;
+	top: 8rem;
+
+	width: 120rem;
+	height: 67.5rem;
+	background: url("img/background3.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: -10;
 }
 
 p {
@@ -192,9 +207,6 @@ p {
   
 }
 
-.box {
-  background-color: black;
-}
 
 h1 {
   text-align: center;
@@ -205,16 +217,6 @@ h1 {
   font-size: 30px;	
 }
 
-.img-box {
-  background-image: url(img/background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:contain;
-  background-position: center;
-  width: 100%;
-  height: 720px;
-  margin-bottom: 150px;
-}
 
 .btn {
   border: none;
@@ -228,27 +230,33 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+
+section {
+  float: center; 
+  margin-bottom: 200px;
+}
+
+
 </style>
 
-<div class='box'>
-	<h1 class="special_header">Localt</h1>
-	
-	<p style="text-align: center;">A young passionate programmer</p>
-</div>
-<div class="img-box">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1 style="color: black; margin-top: 100px;" class="special_header" style="text-transform: uppercase;">"I like glizzys"</h1>
-</div>
+<section style="margin-bottom: 300px;">
+	<h1 style="color: rgb(255, 255, 255);">Localt</h1>
+	<p style="color: rgb(192, 192, 192);">A young passionate game scripter and programmer.</p>
+</section>
+
+<section>
+  <h1>Hello I'm Localt!</h1>
+  <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192)">
+  I'm a Roblox scripter with nearly 3 years of experience in scripting. It brought me a good interest in <br> game designing, scripting, programming and so on...
+  <br>Since last year, I've been going public as a scripter and got hired by a few studios. I left some of them <br> because the environment wasn't challenging enough for me to actually improve my skills! <br>
+  I always enjoy doing my job! I've never actually get bored in game scripting. That's because it's like a hobby to me, <br> but I take it really serious.
+</p>
+</section>
 
 
-<div style="margin-bottom: 150px;" id="about-main">
-  <h1 class="special_header">Programming Languages I'm familiar with</h1>
+<div style="margin-bottom: 150px;">
+  <h1></h1>
+  <h1>Languages I'm familiar with</h1>
   <p style="text-align: center;">
     <img src="img/c++.png" width="128" height="128" style="float: center;">
     <img src="img/python.png" width="128" height="128" style="float: center;">
@@ -258,11 +266,11 @@ html {
 </div>
 
 <div style="margin-bottom: 150px;">
-  <h1 class="special_header">My game developing experiences</h1>
+  <h1>My Roblox game scripting experiences</h1>
 
-  <div style="text-align: center;">
-      <p style="text-align: center; font-size: 20px;">
-        With 2 years of experience, 30k Robux per month. I believe I'm doing a great job<br> on scripting games on the Roblox platform.  When it comes to developing <br> Roblox games, I can do almost everything!  Like: Datastore wizard, great user interface, etc.<br> But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
+  <div style="text-align: center; margin-bottom: 50px;">
+      <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192)">
+        With 2 years of experience, 30k Robux per month. I believe I'm doing a great job <br> on scripting games on the Roblox platform.  When it comes to developing <br> Roblox games, I can do almost everything!  Like: Datastore wizard, great user interface, etc.<br> But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
       </p>
   </div>  
  
@@ -336,18 +344,17 @@ margin-bottom: 150px;">
     <p style="text-align: left;">Age: ???</p>
     <p style="text-align: left;">Nationality: ???</p>
     <p style="text-align: left;">Favourite quote: “Have the courage to follow your heart and intuition. They somehow already know what you truly want to become.”</p>
-    <p>
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
       <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
         <img src="img/black-roblox-icon.png" width="16" height="16">
         </img>
         My Roblox profile
       </a>
-    </p>
+    </div>
   </div>
 </div>
 
 <div>
-  
   <p>© 2021 Localt</p>
 </div>
 
