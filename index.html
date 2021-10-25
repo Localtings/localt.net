@@ -23,6 +23,7 @@
 
 <!--About-->
 <section>
+  <p id="rotate-img"><img src="https://tr.rbxcdn.com/b7fd9b620916437de3eb33139a83f4af/150/150/AvatarHeadshot/Png" style="max-width: 100%; border-radius: 100%;"></p>
   <div style="text-align: center;">
     <div style="display: inline-block; width: 600px;">
       <h1 style="text-align: left;">Roblox Game Scripter, Certified Wannabe Programmer</h1>
@@ -81,14 +82,6 @@
         Tensura Online
       </a>
     </p>
-  
-    <p>
-      <a href="https://www.roblox.com/groups/7250388/Moon-Studios#!/about" class="button-2" target="_blank">
-        <img src="img/studio-roblox-icon.png" width="16" height="16">
-        </img>
-        Moon Studios
-      </a>
-    </p>
   </div>
 </section>
 
@@ -144,10 +137,21 @@
 
 <!--Footer-->
 <div>
-  <p>© 2021 Localt</p>
+  <p style="font-size: 9px;">© 2021 Localt</p>
 </div>
 
+<script>
+const speed = 0.5;
 
+window.onscroll = function () {
+  scrollRotate();
+};
+
+function scrollRotate() {
+  let image = document.getElementById("rotate-img");
+  image.style.transform = "rotate(" + window.pageYOffset * speed + "deg)";
+}
+</script>
 
 </body>
 </html>
