@@ -136,7 +136,18 @@
 
 <!--Footer-->
 <div>
-  <p style="font-size: 14px;">© 2021 Localt</p>
+  <p style="font-size: 16px;">© 2021 Localt</p>
 </div>
+
+<script>
+$.ajax({
+    url: "https://devforum.roblox.com/u/Loca1t.json",
+    dataType: 'json',
+    type: 'get',
+    success: (data) => {
+         console.log(data);
+    }
+});
+</script>
 </body>
 </html>
