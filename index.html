@@ -37,6 +37,21 @@
           </img>
           My Roblox Profile
         </a>
+        <p id="hidden-text" style="color:rgb(192, 192, 192)"></p>
+        <script>
+        $.ajax({
+            url: "https://api.roblox.com/users/404233446/onlinestatus/",
+            dataType: 'json',
+            type: 'get',
+            success: (data) => {
+              if (data.IsOnline) {
+                $('#hidden-text').text("Status: Online");
+              } else {
+                $('#hidden-text').text("Status: Offline");
+              }
+            }
+        });
+        </script>
       </p>
 
     </div>
@@ -136,18 +151,7 @@
 
 <!--Footer-->
 <div>
-  <p style="font-size: 16px;">© 2021 Localt</p>
+  <p style="font-size: 19px;">© 2021 Localt</p>
 </div>
-
-<script>
-$.ajax({
-    url: "https://devforum.roblox.com/u/Loca1t.json",
-    dataType: 'json',
-    type: 'get',
-    success: (data) => {
-         console.log(data);
-    }
-});
-</script>
 </body>
 </html>
