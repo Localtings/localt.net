@@ -5,7 +5,26 @@
   <title>Localt</title> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<script>
+	$.fn.followTo = function (pos) {
+	  var $this = this,
+		$window = $(window);
 
+	  $window.scroll(function (e) {
+      if ($window.scrollTop() > pos) {
+          $this.css({
+            position: 'absolute',
+            top: pos
+          });
+      } else {
+          $this.css({
+            position: 'fixed',
+            top: 0
+          });
+      }
+	  });
+	};
+</script>
 <body>
 
 
@@ -21,44 +40,17 @@
 </section>
 
 
+
 <!--About-->
 <section>
-  <p id="rotate-img"><img src="https://tr.rbxcdn.com/b7fd9b620916437de3eb33139a83f4af/150/150/AvatarHeadshot/Png" style="max-width: 100%; border-radius: 100%;  border: 0.5px solid rgb(255, 255, 255);;"></p>
   <div style="text-align: center;">
     <div style="display: inline-block; width: 600px;">
+      <div id="round-img">
+        <img src="https://tr.rbxcdn.com/b7fd9b620916437de3eb33139a83f4af/150/150/AvatarHeadshot/Png" style="max-width: 100%; border-radius: 100%;  border: 0.5px solid rgb(255, 255, 255); background-color: rgb(42, 42, 42); margin-bottom: 100px;">
+      </div>
       <h1 style="text-align: left;">A Roblox Game Scripter.</h1>
       <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192); text-align: left;">
          I'm a Roblox scripter with nearly 3 years of experience in scripting. It brought me a good interest in game designing, scripting, programming and so on... Since last year, I've been going public as a scripter and got hired by a few studios. I left some of them because the environment wasn't challenging enough for me to actually improve my skills! I always enjoy doing my job! I've never actually get bored in game scripting. That's because it's like a hobby to me, but I take it really serious.
-      </p>
-
-      <p>
-        <a href="https://www.roblox.com/users/404233446/profile" class="button-2" target="_blank">
-          <img src="img/studio-roblox-icon.png" width="16" height="16">
-          </img>
-          My Roblox Profile
-        </a>
-        <p id="hidden-text" style="color:rgb(192, 192, 192)"></p>
-        <script>
-	// Yoinked from stack overflow
-	$.fn.followTo = function (pos) {
-	    var $this = this,
-		$window = $(window);
-
-	    $window.scroll(function (e) {
-		if ($window.scrollTop() > pos) {
-		    $this.css({
-			position: 'absolute',
-			top: pos
-		    });
-		} else {
-		    $this.css({
-			position: 'fixed',
-			top: 0
-		    });
-		}
-	    });
-	};
-        </script>
       </p>
 
     </div>
@@ -146,12 +138,25 @@
 <!--Card-->
 <section style="text-align: center;">
     <div class="card">
-      <h1>Personal card</h1>
-      <p style="text-align: left;">Name: ???</p>
-      <p style="text-align: left;">Nick Name: Localt</p>
-      <p style="text-align: left;">Age: ???</p>
-      <p style="text-align: left;">Nationality: ???</p>
-      <p style="text-align: left;">Favourite quote: “Have the courage to follow your heart and intuition. They somehow already know what you truly want to become.”</p>
+      <h1>Find me online:</h1>
+
+      <p>
+        <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
+          <img src="img/studio-roblox-icon.png" width="16" height="16">
+          </img>
+          Roblox
+        </a>
+      </p>
+      
+      
+      <p>
+        <a href="discord://discord.com/users/501360196938104842" class="button-1" target="_blank">
+          <img src="img/discord.png" width="16" height="16">
+          </img>
+          Discord
+        </a>
+      </p>
+
     </div>
 </section>
 
