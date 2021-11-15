@@ -12,6 +12,7 @@
     margin-top: 50px;
     margin-bottom: 20px;
     position: relative;
+    transition:all .3s ease-in-out;
   }
 
   section {
@@ -49,12 +50,15 @@
   }
   
   .button-2::after {
-    content: "";
+    background: url("img/arrow.png");
+    background-color: currentColor;
+    background-size: 100%;
     font-weight: 700;
     display: inline-block;
     margin-left: 0.25em;
     margin-right: 0.25em;
     transition: margin 0.2s ease;
+    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   }
   
   .button-2:hover::after {
