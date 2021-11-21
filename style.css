@@ -109,11 +109,11 @@
   
   .workbox:hover {
     border: 1px solid rgb(119, 119, 119);
-    background-color: rgb(8, 8, 8);;
+    background-color: rgb(11, 11, 11);;
   }
   
   .workbox:hover p {
-    color: rgb(131, 131, 131);
+    color: rgb(160, 160, 160);
   }
   
   .workbox h1{
@@ -122,7 +122,7 @@
   }
 
   .workbox:hover h1 {
-    color: rgb(153, 153, 153);
+    color: rgb(192, 192, 192);
   }
   
   .workbox p {
