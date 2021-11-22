@@ -40,6 +40,10 @@
     color: rgb(255, 255, 255);
   }
 
+  .button-1:hover {
+    background-color: rgb(58, 58, 58);
+  }
+
   .button-2 {
     padding: 15px 32px;
     border: none;
