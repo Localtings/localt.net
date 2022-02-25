@@ -156,9 +156,3 @@ section {
     grid-column-end: span 3;
   }
 }
-
-@media screen and (max-width: 470px) {
-  .about {
-    display: inherit;
-  }
-}
