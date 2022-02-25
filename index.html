@@ -2,199 +2,102 @@
 <html>
 
 <head>
-  <title>Localt</title> 
+  <title>Localt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-
-<script>
-	$.fn.followTo = function (pos) {
-	  var $this = this,
-		$window = $(window);
-
-	  $window.scroll(function (e) {
-      if ($window.scrollTop() > pos) {
-          $this.css({
-            position: 'absolute',
-            top: pos
-          });
-      } else {
-          $this.css({
-            position: 'fixed',
-            top: 0
-          });
-      }
-	  });
-	};
-</script>
-
 <body>
-
   <!--CSS Initialization-->
   <link rel="stylesheet" href="style.css">
 
 
   <!--Header-->
-  <section>
-    <h1 style="color: rgb(255, 255, 255);">Localt</h1>
-    <p style="color: rgb(192, 192, 192);">A passionate game programmer.</p>
-  </section>
-
-
-
-  <!--About-->
-  <section>
-    <div style="text-align: center;">
-      <div style="display: inline-block; width: 600px;">
-
-        <div id="round-img">
-          <img src="https://tr.rbxcdn.com/b7fd9b620916437de3eb33139a83f4af/150/150/AvatarHeadshot/Png" style="max-width: 100%; border-radius: 100%;  border: 0.5px solid rgb(255, 255, 255); background-color: rgb(42, 42, 42); margin-bottom: 100px;">
-        </div>
-
-        <h1 style="text-align: left;">A Game Programmer.</h1>
-        <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192); text-align: left;">
-          I'm a Roblox scripter with 3 years of experience in scripting. Since last year, I've been going public as an experienced scripter; I'm confident that I can bring all your bright ideas to life with a keyboard; and if not, I'll never be afraid to learn.
-        </p>
-
-      </div>
+  <div class="header">
+    <div class="container">
+      <h1 style="color: rgb(255, 255, 255);">Localt</h1>
     </div>
+  </div>
+
+
+  <section>
+    <h1 style="font-size: 30px;">A Programmer.</h1>
+    <p>Hello I'm Localt - a young passionate game programmer who likes making games and other random stuff.</p>
   </section>
 
   <!--Languages-->
   <section>
-    <h1>Main Languages</h1>
-
+    <h1>I mainly use these languages</h1>
     <p style="text-align: center;">
-
       <img src="img/c++.png" width="128" height="128" style="float: center;">
       <img src="img/Luau.png" width="128" height="128" style="float: center;">
-
     </p>
-
   </section>
 
-
-  <!--Experiences-->
-  <section>
-      <div style="text-align: center; margin-bottom: 50px;">
-        <div style="display: inline-block; width: 600px;">
-          <h1 style="text-align: left;">My Experiences</h1>
-          <p style="font-size: 1.25em; line-height: 1.6; color:rgb(192, 192, 192); text-align: left; margin-bottom: 70px;">
-          I believe I'm doing a great job on scripting games on the Roblox platform. When it comes to developing Roblox games, I can do almost everything! Like: Datastore Wizard, User Interface Design, etc. But I'm specialized in scripting PVP games. Here are the studios that I've worked / been working with:
-          </p>
-          <div>
-            <p>
-              <a href="https://www.roblox.com/groups/11239596/Link-Studios#!/about" class="button-2" target="_blank">
-                <img src="img/studio-roblox-icon.png" width="16" height="16">
-                </img>
-                Link Studios
-              </a>
-            </p>
-
-            <p>
-              <a href="https://www.roblox.com/games/7339320486/Rogue-ga-kill" class="button-2" target="_blank">
-                <img src="img/studio-roblox-icon.png" width="16" height="16">
-                </img>
-                Rogue Ga Kill
-              </a>
-            </p>
-   
-            <p>
-              <a href="https://www.roblox.com/groups/11684049/Project-Tensura-Online#!/about" class="button-2" target="_blank">
-                <img src="img/studio-roblox-icon.png" width="16" height="16">
-                </img>
-                Tensura Online
-              </a>
-            </p>
-          </div>
-        </div>
-
-
-
-        
-      </div>  
-    
-
-    </div>
-  </section>
-
-
-  <!--Git-->
+  <!--Repos-->
   <section>
     <p class="code">// Featured open-source works</p>
-    <div style="margin-bottom: 100px; background-color: black;" class="gitbox">
-	    
-      <a href="https://github.com/Localtings/PartHitbox" target="_blank" class="workbox">
+
+    <div class="box-wrapper">
+      <a href="https://github.com/Localtings/PartHitbox" target="_blank" class="box b1">
         <h1>PartHitbox</h1>
-	      <p>2021 - Now</p>
-        <p>A hitbox framework, a WIP project. Written in Luau</p>
+        <p>2021</p>
+        <p>A hitbox framework. Written in Luau</p>
       </a>
 
-      <a href="https://github.com/Localtings/Disport" target="_blank" class="workbox">
+      <a href="https://github.com/Localtings/Disport" target="_blank" class="box b2">
         <h1>Disport</h1>
-	      <p>2022</p>
-        <p>Discord servers' channel chat in your console.</p>
+        <p>2022</p>
+        <p>Discord servers' channel chat in your console. Written in Python</p>
       </a>
-      
-      </div>
-  </section>
 
-  <!--Showcase-->
-  <section>
-    <h1>Billy The Sword</h1>
-    <div style="text-align: center;">
-      <p style="text-align: center;"><iframe src="https://www.youtube.com/embed/SOsi_56BNuU?autoplay=1&loop=1&showinfo=0&rel=0&controls=0&disablekb=1&mute=1&playlist=SOsi_56BNuU" width="560" height="315" frameborder="0"></iframe></p>
+      <a href="#" target="_blank" class="box b3">
+        <h1>LocEngine (Coming soon!)</h1>
+        <p>2022</p>
+        <p>A game engine written with SDL and C++</p>
+      </a>
     </div>
   </section>
-
 
   <!--Card-->
   <section style="text-align: center;">
-      <div class="card">
-        <h1>Find me online:</h1>
+    <h1>Find me online</h1>
 
-        <p>
-          <a href="https://www.roblox.com/users/404233446/profile" class="button-1" target="_blank">
-            <img src="img/studio-roblox-icon.png" width="16" height="16">
-            </img>
-            Roblox
-          </a>
-        </p>
-        
-        
-        <p>
-          <a href="discord://discord.com/users/501360196938104842" class="button-1" target="_blank">
-            <img src="img/discord.png" width="20" height="16">
-            </img>
-            Discord
-          </a>
-        </p>
+    <p>
+      <a href="https://www.roblox.com/users/404233446/profile" class="btn" target="_blank">
+        <img src="img/studio-roblox-icon.png" width="16" height="16">
+        Roblox
+      </a>
+    </p>
+    
+    
+    <p>
+      <a href="discord://discord.com/users/501360196938104842" class="btn" target="_blank">
+        <img src="img/discord.png" width="20" height="16">
+        Discord
+      </a>
+    </p>
 
-        <p>
-          <a href="https://github.com/Localtings" class="button-1" target="_blank">
-            <img src="img/github.png" width="16" height="16">
-            </img>
-            Github
-          </a>
-        </p>
+    <p>
+      <a href="https://github.com/Localtings" class="btn" target="_blank">
+        <img src="img/github.png" width="16" height="16">
+        Github
+      </a>
+    </p>
 
-        <p>
-          <a href="https://www.youtube.com/channel/UCtnrJaPkbZ1tCfFrkXFsDZg/featured" class="button-1" target="_blank">
-            <img src="img/youtube.png" width="20" height="16">
-            </img>
-            Youtube
-          </a>
-        </p>
-
-      </div>
+    <p>
+      <a href="https://www.youtube.com/channel/UCtnrJaPkbZ1tCfFrkXFsDZg/featured" class="btn" target="_blank">
+        <img src="img/youtube.png" width="20" height="16">
+        Youtube
+      </a>
+    </p>
   </section>
 
 
   <!--Footer-->
-  <div>
-    <p class="footer">Designed by Localt</p>
-    <p class="footer">© 2021 Localt</p>
-  </div>
+  <footer>
+    <p>© 2021 Localt</p>
+  </footer>
 
 </body>
 </html>

@@ -1,186 +1,164 @@
-  .footer {
-    font-size: 16px; 
-    color: rgb(192, 192, 192);
+footer p {
+  font-size: 16px; 
+  color: rgb(192, 192, 192);
+}
+
+.header {
+  padding: 5px;
+  border-bottom: 1px solid rgb(42, 42, 42);
+}
+
+.container {
+  display: block;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.code {
+  font-size: 30px; font-family: Menlo,Monaco,Consolas,'Courier New',monospace; color: rgb(192, 192, 192);
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+.btn {
+  padding: 15px 32px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  border: 0.5px solid white;
+  background-color: rgb(15, 15, 15);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.box-wrapper {
+  display: grid;
+  margin: auto;
+  margin-bottom: 100px; 
+  background-color: black;
+  width: 50rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.box-wrapper p{
+  font-weight: 400;
+  font-family: Consolas, 'Courier New', monospace;
+  color: rgb(192, 192, 192);
+}
+
+.b1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.b3 {
+  grid-column-end: span 3;
+}
+
+.box {
+  display: block;
+  text-decoration: none;
+  border: 1px solid rgb(192, 192, 192);
+  background-color: rgb(15, 15, 15);
+  padding: 20px;
+}
+
+.box:hover {
+  border: 1px solid rgb(119, 119, 119);
+  background-color: rgb(11, 11, 11);;
+}
+
+.box:hover p {
+  color: rgb(160, 160, 160);
+}
+
+.box h1{
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+}
+
+.box:hover h1 {
+  color: rgb(192, 192, 192);
+}
+
+.box p {
+  font-size: 18px;
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+}
+
+body {
+  background: rgb(0, 0, 0) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p {
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  text-align: center;
+  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;	
+}
+
+section {
+  float: center; 
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.yt-box {
+  display: block;
+  width: 560px;
+  height: 316px;
+  margin: auto;
+  border: 1px solid rgb(192, 192, 192);
+  background: rgb(192, 192, 192);
+}
+
+@media screen and (max-width: 815px) {
+  .box-wrapper {
+    width:100%;
+  }
+  .b1 {
+    grid-column-end: span 3;
   }
 
-  .footer a {
-    text-decoration: none;
+  .b2 {
+    grid-column-end: span 3;
   }
 
-  
-  .code {
-    font-size: 30px; font-family: Menlo,Monaco,Consolas,'Courier New',monospace; color: rgb(192, 192, 192);
+  .b3 {
+    grid-column-end: span 3;
   }
+}
 
-  .workbox {
-    border-radius: 5px;
-    display: block;
-    float: right;
-    width: 85%;
-    margin: 10px;
-    text-decoration: none;
-    border: 1px solid rgb(192, 192, 192);
-    background-color: rgb(15, 15, 15);
-    padding: 20px;
+@media screen and (max-width: 470px) {
+  .about {
+    display: inherit;
   }
-
-  section {
-    margin-bottom: 150px;
-  }
-  
-  .button-1 {
-    padding: 15px 32px;
-    width: 100px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    border: 0.5px solid white;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-  }
-
-  .button-1:hover {
-    background-color: rgb(58, 58, 58);
-  }
-
-  .button-2 {
-    padding: 15px 32px;
-    border: none;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    width: 200px
-  }
-  
-  .button-2::after {
-    background-color: currentColor;
-    background-size: 100%;
-    font-weight: 700;
-    display: inline-block;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  }
-  
-  .button-2:hover::after {
-      margin-left: 0.5em;
-      margin-right: 0em;
-  }
-  
-  
-  .button-2:hover {
-    color: rgb(192, 192, 192);
-  }
-  
-  .card {
-    display: inline-block; 
-    padding: 10px 30px;
-    width: 600px;
-    background-color: rgb(10, 10, 10);
-    border: 0.5px solid rgb(112, 112, 112);
-    border-radius: 5px;
-  }
-   
-  .card h1{
-    font-weight: 600;
-    color:white;
-  }
-  
-  .card p{
-    font-weight: 400;
-    color:white;
-  }
-  
-  .gitbox {
-    top: 50%;
-    left: 50%;
-    width: 100%;
-
-    margin: auto;
-
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .gitbox p{
-    font-weight: 400;
-    font-family: Consolas, 'Courier New', monospace;
-    color: rgb(192, 192, 192);
-  }
-  
-  .workbox:hover {
-    border: 1px solid rgb(119, 119, 119);
-    background-color: rgb(11, 11, 11);;
-  }
-  
-  .workbox:hover p {
-    color: rgb(160, 160, 160);
-  }
-  
-  .workbox h1{
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-  }
-
-  .workbox:hover h1 {
-    color: rgb(192, 192, 192);
-  }
-  
-  .workbox p {
-    font-size: 18px;
-    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    color: rgb(192, 192, 192);
-    text-decoration: none;
-  }
-
-  body {
-    background: black no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  body::before {
-    content: '';
-      position: absolute;
-      display: block;
-      top: 8rem;
-      width: 100%;
-      max-width: 100%;
-      height: 63rem;
-      background: url("img/background3.jpg");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      z-index: -10;
-  }
-  
-  p {
-    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    
-  }
-  
-  
-  h1 {
-    text-align: center;
-    font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 30px;	
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  section {
-    float: center; 
-    margin-bottom: 200px;
-  }
+}
