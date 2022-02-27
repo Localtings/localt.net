@@ -22,24 +22,23 @@ footer p {
   font-size: 30px; font-family: Menlo,Monaco,Consolas,'Courier New',monospace; color: rgb(192, 192, 192);
 }
 
-section {
-  margin-bottom: 150px;
-}
-
 .btn {
-  padding: 15px 32px;
+  padding: 15px 30px;
   width: 100px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
+  border-radius: 5px;
   text-decoration: none;
-  border: 0.5px solid white;
-  background-color: rgb(15, 15, 15);
   color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(192, 192, 192);
+  background-color: rgb(15, 15, 15);
 }
 
 .btn:hover {
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(0, 0, 0);
+  border: 0.5px solid rgb(128, 128, 128);
+  color: rgb(192, 192, 192);
 }
 
 .box-wrapper {
@@ -72,32 +71,22 @@ section {
   text-decoration: none;
   border: 1px solid rgb(192, 192, 192);
   background-color: rgb(15, 15, 15);
+  border-radius: 7px;
   padding: 20px;
 }
 
 .box:hover {
-  border: 1px solid rgb(119, 119, 119);
-  background-color: rgb(11, 11, 11);;
-}
-
-.box:hover p {
-  color: rgb(160, 160, 160);
+  box-shadow: white 0px 0px 15px;
 }
 
 .box h1{
-  color: rgb(216, 216, 216);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-}
-
-.box:hover h1 {
-  color: rgb(192, 192, 192);
 }
 
 .box p {
-  font-size: 18px;
   font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: rgb(192, 192, 192);
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 body {
