@@ -92,12 +92,13 @@
 <script>
   $(document).ready(function() {
   	gsap.to("#bg-img", {
-		  opacity: 0,
+		  opacity: 0,     //
+      y: -100,        // goal
       scrollTrigger: {
 		    trigger: "#lowerbody",
         start: "top 850px",
         end: "top 60px",
-        // markers: true,
+//        markers: true,
 		    scrub: true,
 		  }
 		});
