@@ -4,28 +4,20 @@
 <head>
   <title>Localt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-  <!--CSS Initialization-->
   <link rel="stylesheet" href="style.css">
-
-
-  <!--Header-->
-  <div class="header">
-    <div class="container">
-      <h1 style="color: rgb(255, 255, 255);">Localt</h1>
-    </div>
-  </div>
-
+  <div id="bg-img" style="opacity: 1;"></div>
 
   <section id="main">
     <h1 style="font-size: 30px;">A Programmer.</h1>
     <p>Hello I'm Localt - a young passionate game programmer who likes making games and other random stuff.</p>
   </section>
 
-  <!--Languages-->
   <section>
     <h1>I mainly use these languages</h1>
     <p style="text-align: center;">
@@ -34,70 +26,81 @@
     </p>
   </section>
 
-  <!--Repos-->
-  <section id="works">
-    <p class="code">// Featured open-source works</p>
+  <div id="lowerbody">
+    <section id="works">
+      <p class="code">// Featured open-source works</p>
+  
+      <div class="box-wrapper">
+        <a href="https://github.com/Localtings/PartHitbox" target="_blank" class="box b1">
+          <h1>PartHitbox</h1>
+          <p>2021</p>
+          <p>A hitbox framework. Written in Luau</p>
+        </a>
+  
+        <a href="https://github.com/Localtings/Disport" target="_blank" class="box b2">
+          <h1>Disport</h1>
+          <p>2022</p>
+          <p>Discord servers' channel chat in your console. Written in Python</p>
+        </a>
+  
+        <a href="#" target="_blank" class="box b3">
+          <h1>LocEngine (Coming soon!)</h1>
+          <p>2022</p>
+          <p>A game engine written with SDL and C++</p>
+        </a>
+      </div>
+    </section>
+  
+    <section style="text-align: center;" id="contact">
+      <h1>Find me online</h1>
+  
+      <p>
+        <a href="https://www.roblox.com/users/404233446/profile" class="btn" target="_blank">
+          <img src="img/studio-roblox-icon.png" width="16" height="16">
+          Roblox
+        </a>
+      </p>
+      
+      
+      <p>
+        <a href="discord://discord.com/users/501360196938104842" class="btn" target="_blank">
+          <img src="img/discord.png" width="20" height="16">
+          Discord
+        </a>
+      </p>
+  
+      <p>
+        <a href="https://github.com/Localtings" class="btn" target="_blank">
+          <img src="img/github.png" width="16" height="16">
+          Github
+        </a>
+      </p>
+  
+      <p>
+        <a href="https://www.youtube.com/channel/UCtnrJaPkbZ1tCfFrkXFsDZg/featured" class="btn" target="_blank">
+          <img src="img/youtube.png" width="20" height="16">
+          Youtube
+        </a>
+      </p>
+    </section>
+  </div>
 
-    <div class="box-wrapper">
-      <a href="https://github.com/Localtings/PartHitbox" target="_blank" class="box b1">
-        <h1>PartHitbox</h1>
-        <p>2021</p>
-        <p>A hitbox framework. Written in Luau</p>
-      </a>
-
-      <a href="https://github.com/Localtings/Disport" target="_blank" class="box b2">
-        <h1>Disport</h1>
-        <p>2022</p>
-        <p>Discord servers' channel chat in your console. Written in Python</p>
-      </a>
-
-      <a href="#" target="_blank" class="box b3">
-        <h1>LocEngine (Coming soon!)</h1>
-        <p>2022</p>
-        <p>A game engine written with SDL and C++</p>
-      </a>
-    </div>
-  </section>
-
-  <!--Contact-->
-  <section style="text-align: center;" id="contact">
-    <h1>Find me online</h1>
-
-    <p>
-      <a href="https://www.roblox.com/users/404233446/profile" class="btn" target="_blank">
-        <img src="img/studio-roblox-icon.png" width="16" height="16">
-        Roblox
-      </a>
-    </p>
-    
-    
-    <p>
-      <a href="discord://discord.com/users/501360196938104842" class="btn" target="_blank">
-        <img src="img/discord.png" width="20" height="16">
-        Discord
-      </a>
-    </p>
-
-    <p>
-      <a href="https://github.com/Localtings" class="btn" target="_blank">
-        <img src="img/github.png" width="16" height="16">
-        Github
-      </a>
-    </p>
-
-    <p>
-      <a href="https://www.youtube.com/channel/UCtnrJaPkbZ1tCfFrkXFsDZg/featured" class="btn" target="_blank">
-        <img src="img/youtube.png" width="20" height="16">
-        Youtube
-      </a>
-    </p>
-  </section>
-
-
-  <!--Footer-->
   <footer>
     <p>© 2021 Localt</p>
   </footer>
-
 </body>
+<script>
+  $(document).ready(function() {
+  	gsap.to("#bg-img", {
+		  opacity: 0,
+      scrollTrigger: {
+		    trigger: "#lowerbody",
+        start: "top 850px",
+        end: "top 60px",
+        // markers: true,
+		    scrub: true,
+		  }
+		});
+  });
+</script>
 </html>

@@ -1,9 +1,21 @@
+#bg-img {
+  height: 100vh; /* 100 view height */
+  width: 100vw; /* 100 view width */
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -1; /* goes behind text n stuff */
+  top: 0;
+  left: 0; /* mobile fix */
+}
+
 footer p {
   font-size: 16px; 
   color: rgb(192, 192, 192);
 }
 
-.header {
+header {
   padding: 5px;
   border-bottom: 1px solid rgb(42, 42, 42);
 }
