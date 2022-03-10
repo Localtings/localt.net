@@ -15,7 +15,9 @@
 
   <section id="main">
     <h1 style="font-size: 30px;">A Programmer.</h1>
-    <p>Hello I'm Localt - a young passionate game programmer who likes making games and other random stuff.</p>
+    <div class="text-wrapper">
+      <p>Hello I'm Localt - a young passionate game programmer who likes making games and other random stuff.</p>
+    </div>
   </section>
 
   <section>
@@ -28,7 +30,7 @@
 
   <div id="lowerbody">
     <section id="works">
-      <p class="code">// Featured open-source works</p>
+      <p class="code">// Open-source works</p>
   
       <div class="box-wrapper">
         <a href="https://github.com/Localtings/PartHitbox" target="_blank" class="box b1">
@@ -93,11 +95,11 @@
   $(document).ready(function() {
   	gsap.to("#bg-img", {
 		  opacity: 0,
+      scale: 1.2,
       scrollTrigger: {
 		    trigger: "#lowerbody",
         start: "top 850px",
         end: "top 60px",
-//        markers: true,
 		    scrub: true,
 		  }
 		});
