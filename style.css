@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap');
+
+
 #bg-img {
   height: 100vh; /* 100 view height */
   width: 100vw; /* 100 view width */
@@ -64,7 +67,6 @@ header {
 }
 
 .box-wrapper p{
-  font-weight: 400;
   font-family: Consolas, 'Courier New', monospace;
   color: rgb(192, 192, 192);
 }
@@ -97,6 +99,7 @@ header {
 }
 
 .box p {
+
   font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   color: rgb(255, 255, 255);
 }
@@ -111,7 +114,6 @@ p {
   font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
-  font-weight: 400;
   font-size: 20px;
   text-align: center;
   overflow-wrap: break-word;
@@ -125,10 +127,9 @@ p {
 
 h1 {
   text-align: center;
-  font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-decoration: none;
-  font-weight: 600;
   font-size: 25px;	
 }
 
