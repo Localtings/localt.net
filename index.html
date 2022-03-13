@@ -4,7 +4,6 @@
 <head>
   <title>Localt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
@@ -26,7 +25,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="languages">
     <h1>I mainly use these languages</h1>
     <p style="text-align: center;">
       <img src="img/c++.png" width="128" height="128" style="float: center;">
@@ -65,7 +64,6 @@
   </footer>
 </body>
 <script>
-  $(document).ready(function() {
   	gsap.to("#bg-img", {
 		  opacity: 0,
       scale: 1.2,
@@ -75,7 +73,6 @@
         end: "top 60px",
 		    scrub: true,
 		  }
-		});
-  });
+		});    
 </script>
 </html>
