@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap');
 
-
 #bg-img {
   height: 100vh; /* 100 view height */
   width: 100vw; /* 100 view width */
@@ -16,11 +15,6 @@
 footer p {
   font-size: 16px; 
   color: rgb(192, 192, 192);
-}
-
-header {
-  padding: 5px;
-  border-bottom: 1px solid rgb(42, 42, 42);
 }
 
 .container {
@@ -45,7 +39,7 @@ header {
   font-size: 20px;
   border-radius: 5px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   border: 0.5px solid rgb(192, 192, 192);
   background-color: rgb(15, 15, 15);
   transition: 0.2s;
@@ -55,13 +49,13 @@ header {
   background-color: rgb(0, 0, 0);
   border: 0.5px solid rgb(128, 128, 128);
   color: rgb(192, 192, 192);
+  
 }
 
 .box-wrapper {
   display: grid;
   margin: auto;
   margin-bottom: 100px; 
-  background-color: black;
   width: 50rem;
   grid-gap: 1rem;
 }
@@ -90,13 +84,13 @@ header {
 }
 
 .box h1{
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
 }
 
 .box p {
   font-family: -apple-system,BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 body {
